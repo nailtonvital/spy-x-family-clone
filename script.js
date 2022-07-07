@@ -1,6 +1,5 @@
 const prevBtn = document.querySelector('#prev')
 const nextBtn = document.querySelector('#next')
-const audio = document.querySelector('#audio')
 const img = document.querySelector('#img')
 const name = document.querySelector('.name-character')
 const navBtn = document.querySelector('.menu-toggle')
