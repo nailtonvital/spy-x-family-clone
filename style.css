@@ -9,32 +9,35 @@
 body{
     background-color: #8DA99B;
     font-family: Oswald, Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
 }
 
-.content{
-    padding-inline: 100px;
-}
+
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
     
 }
 
 .logo img{
-    height: 70px;
+    height: 4rem;
 }
 
 .menu{
     display: flex;
     justify-content: space-between;
+    padding-right: 7rem;
 }
 
 .item{
-    margin-inline: 30px;
-    font-size: 25px;
+    margin-inline: 2rem;
+    font-size: 1.5rem;
 }
 
 .content-area{
@@ -42,7 +45,7 @@ nav{
 }
 
 .name-character{
-    padding-top: 6rem;
+    margin-top: 8vw;
     width: 100%;
     justify-content: center;
     display: flex;
@@ -61,7 +64,7 @@ nav{
 }
 .img-character{
     height: 100%;
-    
+    transition:all 5ms ease-in;
 }
 
 .character-menu{
@@ -72,3 +75,111 @@ nav{
     position: absolute;
 }
 
+.nav-toggle{
+    margin: 25px;
+    text-align: center;
+    background-color: #8DA99B;
+}
+
+@media(min-width:1467px){
+    .nav-toggle{
+        display: none;
+    }
+}
+
+@media(max-width:1466px) {
+    .logo img {
+        height: 4rem;
+        padding-left: 7rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: black;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        left: 0px;
+        padding-right: 10vw;
+    }
+}
+
+@media(max-width:955px) {
+    .logo img {
+            height: 4rem;
+            padding-left: 4rem;
+        }
+    .name-character {
+        margin-top: 20vw;
+        
+        font-size: 17vw;
+    }
+    .menu{
+        display: none;
+    }
+    .one,
+    .two,
+    .three {
+        background-color: black;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        left: 0px;
+        padding-right: 10vw;
+    }
+}
+
+@media(max-width:675px) {
+    .logo img {
+        height: 6rem;
+        padding-left: 4rem;
+    }
+    .name-character {
+        margin-top: 35vw;
+
+        font-size: 17vw;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: black;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+    }
+
+    .logo img {
+        height: 4rem;
+    }
+
+
+
+    
+}
+@media(max-width:425px){
+    .name-character {
+            margin-top: 55vw;
+
+            font-size: 17vw;
+        }
+}
