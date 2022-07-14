@@ -2,8 +2,7 @@ const prevBtn = document.querySelector('#prev')
 const nextBtn = document.querySelector('#next')
 const img = document.querySelector('#img')
 const name = document.querySelector('.name-character')
-const navBtn = document.querySelector('.menu-toggle')
-const navtoggle = document.querySelector('.nav-toggle')
+
 
 
 let dataIndex = 0
@@ -57,18 +56,11 @@ function nextCharacter() {
 
     loadChara(data.characters[dataIndex])
 }
- function show(){
-     if (navtoggle.style.display === 'block'){
-         navtoggle.style.display = 'none'
-     }else{
-         navtoggle.style.display = 'block'
-     }
-     
- }
+
 
 //change
 prevBtn.addEventListener('click', prevCharacter)
 nextBtn.addEventListener('click', nextCharacter)
 
 
-navBtn.addEventListener('click', show)
+
